@@ -1,6 +1,6 @@
 https://github.com/Kasimov-rgb/kasimovv.git
 
-env/
+.venv/
 db.sqlite3
 
 pycache/
