@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer List</title>
+</head>
+<body>
+    <h1>Trainers</h1>
+    <ul>
+        {% for trainer in trainers %}
+            <li>{{ trainer.name }} - {{ trainer.specialization }} - ${{ trainer.salary }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_trainer' %}">Add Trainer</a>
+</body>
+</html>
