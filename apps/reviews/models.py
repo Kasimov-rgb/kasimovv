@@ -3,7 +3,6 @@ from django.contrib.auth import get_user_model
 
 from apps.fasts.models import Fast
 
-
 User = get_user_model()
 
 

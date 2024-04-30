@@ -1,6 +1,6 @@
 from django.urls import path
 from apps.basket.views import BasketDetailView, QuantityChangeLogics
-from .views import add_to_favorite, remove_from_favorite
+from apps.basket.views import add_to_favorite, remove_from_favorite
 
 urlpatterns = [
     path('basket/', BasketDetailView.as_view(), name='cart'),

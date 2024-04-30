@@ -46,6 +46,12 @@ PROJECT_APPS = [
     'apps.reviews',
     'apps.basket',
     'apps.likes',
+    'apps.tags',
+    'apps.trainer',
+    'apps.courses',
+    'apps.schedules',
+    'apps.buy',
+    'apps.bmi',
 
 ]
 

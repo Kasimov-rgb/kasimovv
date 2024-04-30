@@ -1,5 +1,5 @@
 from django.urls import path
-from apps.likes.views import(
+from apps.likes.views import (
     LikeCreateView,
     LikeDeleteView,
 )

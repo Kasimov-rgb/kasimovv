@@ -1,4 +1,3 @@
-
 from django.urls import path
 
 from apps.fasts.views import index, create_fasts, detail_fasts, delete_fasts, update_fasts

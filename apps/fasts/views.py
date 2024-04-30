@@ -47,7 +47,7 @@ def detail_fasts(request, pk):
         )
         return redirect('detail_fast', fast.id)
 
-    return render(request, 'detail.html', locals())
+    return render(request, 'base/../../templates/detail.html', locals())
 
 
 def delete_fasts(request, pk):
