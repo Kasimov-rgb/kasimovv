@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from apps.basket.models import Basket, Item
 
 from apps.basket.models import Favorite
-from apps.basket.froms import AddToFavoriteForm
+from apps.basket.forms import AddToFavoriteForm
 
 
 class BasketDetailView(generic.ListView):

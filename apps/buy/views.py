@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from apps.buy.models import UserProfile
-from apps.buy.froms import CardForm
+from apps.buy.forms import CardForm
 
 
 def update_card(request):

@@ -1,8 +1,0 @@
-https://github.com/Kasimov-rgb/kasimovv.git
-
-.venv/
-db.sqlite3
-
-pycache/
-media/
-.idea/

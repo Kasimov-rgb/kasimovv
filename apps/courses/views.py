@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from apps.courses.models import Course, Enrollment
 from django.contrib.auth.decorators import login_required
-from apps.courses.froms import EnrollmentForm
+from apps.courses.forms import EnrollmentForm
 
 from apps.courses.models import Course
 

@@ -7,7 +7,7 @@ from apps.products.models import Product
 
 class ProductListView(generic.ListView):
     model = Product
-    template_name = 'base/../../templates/index.html'
+    template_name = 'index..html'
     context_object_name = 'products'
 
     def get_context_data(self, *args, **kwargs):

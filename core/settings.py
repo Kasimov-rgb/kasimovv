@@ -42,7 +42,6 @@ PROJECT_APPS = [
     'apps.categories',
     'apps.products',
     'apps.users',
-    'apps.fasts',
     'apps.reviews',
     'apps.basket',
     'apps.likes',
@@ -51,9 +50,10 @@ PROJECT_APPS = [
     'apps.courses',
     'apps.schedules',
     'apps.buy',
-    'apps.bmi',
 
 ]
+
+AUTH_USER_MODEL = 'users.CustomUser'
 
 INSTALLED_APPS = DJANGO_APPS + CONFIG_APPS + PROJECT_APPS + MY_APPS
 
@@ -141,4 +141,3 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'users.CustomUser'

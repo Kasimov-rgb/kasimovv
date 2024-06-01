@@ -15,8 +15,13 @@ class Product(models.Model):
         max_length=50,
         verbose_name="Название",
     )
-    description = RichTextField(
+    c = RichTextField(
         verbose_name="Описание",
+    )
+    image_for_product = models.ImageField(
+        upload_to="product_media/",
+        blank=True,
+        null=True,
     )
     price = models.DecimalField(
         max_digits=10,
@@ -32,20 +37,3 @@ class Product(models.Model):
         return self.title
 
 
-class ProductImage(models.Model):
-    product = models.ForeignKey(
-        Product, on_delete=models.CASCADE,
-        related_name='images',
-        verbose_name="Продукт",
-    )
-    image = models.ImageField(
-        upload_to=upload_products,
-        verbose_name="Картика",
-    )
-
-    def delete(self, using=None, keep_parents=False):
-        os.remove(self.image.path)
-        super().delete(using=None, keep_parents=False)
-
-    def __str__(self):
-        return f"{self.image.url}"

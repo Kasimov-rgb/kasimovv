@@ -1,14 +1,14 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 
-from apps.fasts.models import Fast
+from apps.trainer.models import Trainer
 
 User = get_user_model()
 
 
 class Reviews(models.Model):
-    fasts = models.ForeignKey(
-        Fast,
+    trainer = models.ForeignKey(
+        Trainer,
         on_delete=models.CASCADE,
         verbose_name="Пост",
         related_name="reviews"

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from apps.schedules.models import Schedule
-from apps.schedules.froms import ScheduleForm
+from apps.schedules.forms import ScheduleForm
 
 
 @admin.register(Schedule)

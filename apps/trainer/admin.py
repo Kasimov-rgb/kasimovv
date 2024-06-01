@@ -1,6 +1,6 @@
 from django.contrib import admin
 from apps.trainer.models import Trainer
-from apps.trainer.froms import TrainerForm
+from apps.trainer.forms import TrainerForm
 
 
 @admin.register(Trainer)

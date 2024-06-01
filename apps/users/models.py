@@ -6,10 +6,6 @@ from django.contrib.auth.models import AbstractUser
 from utils.image_path import upload_avatar_for_user
 
 
-# class User(AbstractUser):
-#     pass
-
-
 class CustomUser(AbstractUser):
     display_name = models.CharField(
         max_length=50,

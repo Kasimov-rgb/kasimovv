@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from apps.trainer.models import Trainer
-from apps.trainer.froms import TrainerForm
+from apps.trainer.forms import TrainerForm
 
 
 class TrainerListView(View):

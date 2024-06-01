@@ -15,7 +15,7 @@ from django.views.generic import CreateView, UpdateView
 from django.urls import reverse_lazy
 from django.contrib.auth import get_user_model
 
-from apps.users.froms import UserFrom, UserUpdateForm
+from apps.users.forms import UserFrom, UserUpdateForm
 
 from django.shortcuts import render, redirect
 

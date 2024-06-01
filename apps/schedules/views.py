@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from apps.schedules.models import Schedule
-from apps.schedules.froms import ScheduleForm
+from apps.schedules.forms import ScheduleForm
 
 
 def schedule_list(request):
