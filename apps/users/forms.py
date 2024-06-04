@@ -23,3 +23,5 @@ class UserUpdateForm(UserChangeForm):
             'display_name',
             'avatar'
         ]
+
+

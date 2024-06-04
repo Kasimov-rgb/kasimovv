@@ -1,16 +1,3 @@
-# from django.views.generic import CreateView
-# from django.urls import reverse_lazy
-#
-#
-# from apps.users.froms import UserFrom
-#
-# class SignUpView(CreateView):
-#     model = CustomUser
-#     from_class = UserFrom
-#     success_url = reverse_lazy('products_list')
-#     template_name = 'signup.html'
-
-
 from django.views.generic import CreateView, UpdateView
 from django.urls import reverse_lazy
 from django.contrib.auth import get_user_model
@@ -46,3 +33,22 @@ class UserSignUpView(View):
     def get(self, request):
         form = UserFrom()
         return render(request, 'auth/signup.html', {"form": form})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

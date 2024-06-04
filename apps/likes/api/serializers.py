@@ -1,31 +1,27 @@
 from rest_framework import serializers
 
-from apps.products.models import Product
+from apps.likes.models import Like
 
 
-class ProductSerializer(serializers.ModelSerializer):
+class LikeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Product
+        model = Like
         fields = [
-            'category',
-            'title',
-            'c',
-            'image_for_product',
-            'price',
-            'created_at',
+            'user',
+            'post',
+            'comment',
+            'count',
 
         ]
 
 
-class ProductCreateSerializer(serializers.ModelSerializer):
+class LikeCreateSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Product
+        model = Like
         fields = [
-            'category',
-            'title',
-            'c',
-            'image_for_product',
-            'price',
-            'created_at',
+            'user',
+            'post',
+            'comment',
+            'count',
 
         ]

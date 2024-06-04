@@ -1,26 +1,27 @@
+
 from rest_framework import generics, viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.reverse import reverse
 
-from apps.products.api.serializers import ProductSerializer, ProductCreateSerializer
-from apps.products.models import Product
+from apps.likes.api.serializers import LikeSerializer, LikeCreateSerializer
+from apps.likes.models import Like
 
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+class LikeViewSet(viewsets.ModelViewSet):
+    queryset = Like.objects.all()
+    serializer_class = LikeSerializer
 
 
 def get_serializer_class(self):
     if self.action in ['create']:
-        return ProductCreateSerializer
+        return LikeCreateSerializer
     elif self.action == 'retrieve':
-        return ProductSerializer
+        return LikeSerializer
     return self.serializer_class
 
 
-class ProductUpdateDeleteRetrieveAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+class LikeUpdateDeleteRetrieveAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Like.objects.all()
+    serializer_class = LikeSerializer
 

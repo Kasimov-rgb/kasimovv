@@ -1,27 +1,28 @@
-from rest_framework import generics, viewsets
-from rest_framework.response import Response
-from rest_framework.decorators import api_view
-from rest_framework.reverse import reverse
+from rest_framework import serializers
 
-from apps.products.api.serializers import ProductSerializer, ProductCreateSerializer
-from apps.products.models import Product
+from apps.reviews.models import Reviews
 
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reviews
+        fields = [
+            'trainer',
+            'user',
+            'text',
+            'created_at'
+        ]
 
 
-def get_serializer_class(self):
-    if self.action in ['create']:
-        return ProductCreateSerializer
-    elif self.action == 'retrieve':
-        return ProductSerializer
-    return self.serializer_class
+class ReviewCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reviews
+        fields = [
+            'trainer',
+            'user',
+            'text',
+            'created_at'
+        ]
 
-
-class ProductUpdateDeleteRetrieveAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
 
 

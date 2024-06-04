@@ -6,19 +6,19 @@ from apps.trainer.models import Trainer
 class TrainerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Trainer
-        fields = {
+        fields = [
             'name',
             'specialization',
             'salary',
-        }
+        ]
 
 
 class TrainerCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Trainer
-        fields = {
+        fields = [
             'name',
             'specialization',
             'salary',
-        }
+        ]
 
