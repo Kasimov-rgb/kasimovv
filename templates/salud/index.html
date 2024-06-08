@@ -1,37 +1,8 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="NextGenerationDev">
-   <title>Salud - Fitness & Gym HTML Template</title>
-   <!--Favicon img-->
-   <link rel="shortcut icon" href="../../static/assets/img/favicon/favicon.png">
-   <!--Bootstarp min css-->
-   <link rel="stylesheet" href="../../static/assets/css/bootstrap.min.css">
-   <!--Bootstarp map css-->
-   <link rel="stylesheet" href="../../static/assets/css/bootstrap.css.map">
-   <!--Odometer css-->
-   <link rel="stylesheet" href="../../static/assets/css/odometer.css">
-   <!--Owl Carousel css-->
-   <link rel="stylesheet" href="../../static/assets/css/owl.min.css">
-   <!--Owl Carousel Theme css-->
-   <link rel="stylesheet" href="../../static/assets/css/owl.theme.default.min.css">
-   <!--All min css-->
-   <link rel="stylesheet" href="../../static/assets/css/all.min.css">
-   <!--Animate css-->
-   <link rel="stylesheet" href="../../static/assets/css/animate.css">
-   <!--Popup css-->
-   <link rel="stylesheet" href="../../static/assets/css/magnific-popup.css">
-   <!--Swiper min css-->
-   <link rel="stylesheet" href="../../static/assets/css/swiper-bundle.min.css">
-   <!--Owl Nice select css-->
-   <link rel="stylesheet" href="../../static/assets/css/nice-select.css">
-   <!--main css-->
-   <link rel="stylesheet" href="../../static/assets/css/main.css">
-</head>
-<body>
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+
 
 <!--==== Scrool Top Bottom Here ======= -->
 <div id="progress">
@@ -40,146 +11,7 @@
 <!--==== Scrool Top Bottom End ======= -->
 
 <!-- Header Here -->
-<header class="header-section">
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="logo-menu">
-                <a href="index.html" class="logo">
-                    <img src="../../static/assets/img/logo/footer-logo.png" alt="logo">
-                </a>
-
-            </div>
-            <ul class="main-menu">
-                <li>
-                    <a href="#0">
-                        Home
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="index.html">Home One</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="index-2.html">Home two</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="about.html">
-                        about us
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        Classes
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="classes.html">our classes</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="classes-details.html">classes details</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#0">
-                        events
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="event.html">our event</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="event-details.html">event details</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#0">
-                        trainners
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="trainner.html">our trainner</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="trainner-details.html">tarinner details</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#0">
-                        shop
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="shop.html">shop page</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="shop-single.html">single product</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="shop-cart.html">cart page</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="checkout.html">checkout</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="payment-successful.html">successful</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#0">
-                        pages
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="subtwohober">
-                            <a href="gallery.html">our gallery</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="testimonial.html">Testimonial</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="blog.html">blog</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="blog-details.html">blog details</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="contact.html">contact</a>
-                        </li>
-                        <li class="subtwohober">
-                            <a href="404.html">error</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="menu__right__components d-flex align-items-center">
-                <div class="menu__components">
-                    <a href="#0" class="search-trigger search-icon"><i class="fa-solid fa-search"></i></a>
-                    <div class="tolly__shop">
-                    <a href="shop.html">
-                     <i class="fa-solid fa-cart-shopping"></i>
-                   </a>
-                    </div>
-                </div>
-                <div class="header-bar d-lg-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Header End -->
+    {% include 'base/header.html' %}
 
 <!--==== Banner Section Here ======= -->
 <section class="banner__section">
@@ -254,7 +86,7 @@
                                 <img src="../../static/assets/img/choose/small-4.jpg" alt="swiper__image">
                             </div>
                             <div class="swiper-slide slide__smoll">
-                                <img src="../../static/assets/img/choose/small-5.jpg" alt="swiper__image">
+                                <img src="../../static/assets/img/choose/small-4.jpg" alt="swiper__image">
                             </div>
                         </div>
                     </div>
@@ -308,74 +140,165 @@
 </section>
 <!--==== choose Section End ======= -->
 
-<!--=========== Counter Section Start ========= -->
-<section class="counter__section pt-120 pb-120">
+
+<section class="schedule__section pt-120 pb-120">
     <div class="container">
-       <div class="main__counter__wrapper">
-          <div class="counter__items odometer__item wow fadeInDown" data-wow-delay="0.1s">
-             <div class="counter__content">
-                <div class="icon">
-                    <i class="fa-solid fa-clock"></i>
+        <div class="section__header section__center wow fadeInDown" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInDown;">
+            <h5>our schedule</h5>
+            <div class="witr_bar_main">
+                <div class="witr_bar_inner witr_bar_innerc">
                 </div>
-                <div class="cont d-flex align-items-center">
-                   <h2 class="odometer" data-odometer-final="1177">
-                      0
-                   </h2>
+            </div>
+            <h2 class="section__title">
+                Our Classes Schedule
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table__content">
+                    <div class="table__box">
+                        <div class="table__wrapper">
+                            <table>
+                                <tbody>
+                                <tr class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                    <th><img src="../../static/assets/img/clock/clock.png" alt="clock__image"></th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Saturday</th>
+                                </tr>
+                                <tr class="items__bg wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                    <td><h6>8.00 Am</h6></td>
+                                    <td>
+                                        <h6>Matt Roberts</h6>
+                                        <span>Body building </span>
+                                    </td>
+                                    <td>
+                                        <h6>Louise Parker</h6>
+                                        <span>Crossfit Coach</span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h6>Scott Laidler</h6>
+                                        <span>Cardio &amp; Conditioning</span>
+                                    </td>
+                                    <td>
+                                        <h6>Kayla Itsines</h6>
+                                        <span>Pump Iron</span>
+                                    </td>
+                                    <td>
+                                        <h6>Bob Harper</h6>
+                                        <span>Yogi Life</span>
+                                    </td>
+                                </tr>
+                                <tr class="section-bg wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                    <td><h6>10.00 Am</h6></td>
+                                    <td>
+                                        <h6>Bob Harper</h6>
+                                        <span>Yogi Life</span>
+                                    </td>
+                                    <td>
+                                        <h6>Scott Laidler</h6>
+                                        <span>Cardio &amp; Conditioning</span>
+                                    </td>
+                                    <td>
+                                        <h6>Kayla Itsines</h6>
+                                        <span>Pump Iron</span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h6>Louise Parker</h6>
+                                        <span>Crossfit Coach</span>
+                                    </td>
+                                    <td>
+                                        <h6>Matt Roberts</h6>
+                                        <span>Body building </span>
+                                    </td>
+                                </tr>
+                                <tr class="items__bg wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <td><h6>12.00 Pm</h6></td>
+                                    <td>
+                                        <h6>Louise Parker</h6>
+                                        <span>Crossfit Coach</span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h6>Kayla Itsines</h6>
+                                        <span>Pump Iron</span>
+                                    </td>
+                                    <td>
+                                        <h6>Scott Laidler</h6>
+                                        <span>Cardio &amp; Conditioning</span>
+                                    </td>
+                                    <td>
+                                        <h6>Matt Roberts</h6>
+                                        <span>Body building </span>
+                                    </td>
+                                    <td>
+                                        <h6>Bob Harper</h6>
+                                        <span>Yogi Life</span>
+                                    </td>
+                                </tr>
+                                <tr class="section-bg wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                                    <td><h6>5.00 Pm</h6></td>
+                                    <td>
+                                        <h6>Matt Roberts</h6>
+                                        <span>Body building </span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h6>Louise Parker</h6>
+                                        <span>Crossfit Coach</span>
+                                    </td>
+                                    <td>
+                                        <h6>Scott Laidler</h6>
+                                        <span>Cardio &amp; Conditioning</span>
+                                    </td>
+                                    <td>
+                                        <h6>Kayla Itsines</h6>
+                                        <span>Pump Iron</span>
+                                    </td>
+                                    <td>
+                                        <h6>Bob Harper</h6>
+                                        <span>Yogi Life</span>
+                                    </td>
+                                </tr>
+                                <tr class="items__bg wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                    <td><h6>8.00 Pm</h6></td>
+                                    <td>
+                                        <h6>Louise Parker</h6>
+                                        <span>Crossfit Coach</span>
+                                    </td>
+                                    <td>
+                                        <h6>Kayla Itsines</h6>
+                                        <span>Pump Iron</span>
+                                    </td>
+                                    <td>
+                                        <h6>Scott Laidler</h6>
+                                        <span>Cardio &amp; Conditioning</span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h6>Matt Roberts</h6>
+                                        <span>Body building </span>
+                                    </td>
+                                    <td>
+                                        <h6>Bob Harper</h6>
+                                        <span>Yogi Life</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Working Hours
-                </p>
-             </div>
-          </div>
-          <div class="counter__items odometer__item wow fadeInDown" data-wow-delay="0.4s">
-             <div class="counter__content">
-                <div class="icon">
-                    <i class="fa-sharp fa-solid fa-heart"></i>
-                </div>
-                <div class="cont d-flex align__items__center">
-                   <h2 class="odometer" data-odometer-final="1919">
-                      0
-                   </h2>
-                </div>
-                <p>
-                  happy clients
-                </p>
-             </div>
-          </div>
-          <div class="counter__items odometer__item wow fadeInDown" data-wow-delay="0.6s">
-             <div class="counter__content">
-                <div class="icon">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                </div>
-                <div class="cont d-flex align-items-center">
-                   <h2 class="odometer" data-odometer-final="712">
-                      0
-                   </h2>
-                </div>
-                <p>
-                    Success Stories
-                </p>
-             </div>
-          </div>
-          <div class="counter__items odometer__item wow fadeInDown" data-wow-delay="0.9s">
-             <div class="counter__content">
-                <div class="icon">
-                    <i class="fa-solid fa-gem"></i>
-                </div>
-                <div class="cont d-flex align-items__center">
-                   <h2 class="odometer" data-odometer-final="991">
-                      0
-                   </h2>
-                </div>
-                <p>
-                    PerfectBodies
-                </p>
-             </div>
-          </div>
-       </div>
+            </div>
+        </div>
     </div>
 </section>
-<!--=========== Counter Section End ========= -->
+
 
 <!--==== Classes Section Here ======= -->
 <section class="classes__section classes__style__two">
@@ -514,84 +437,6 @@
 </section>
 <!--==== Discount Section End ======= -->
 
-<!--==== Calculate Section Here ======= -->
-<section class="calculate__section pt-120 pb-120">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6">
-                <form action="#" method="post">
-                    <div class="calculate__wrapper">
-                        <h3 class="cal__tittle mb-3 wow fadeInDown" data-wow-duration="2s">
-                            calculate your <span>bmi</span>
-                        </h3>
-                        <div class="calculate__items">
-                            <div class="row g-4">
-                               <div class="col-lg-6 wow fadeInLeft" data-wow-duration="2s">
-                                  <div class="input__calculate">
-                                    <input type="text" name="height" placeholder="height">
-                                  </div>
-                                </div>
-                                <div class="col-lg-6 wow fadeInRight" data-wow-duration="2s">
-                                    <div class="input__calculate">
-                                        <input type="text" name="Weight" placeholder="Weight">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 wow fadeInLeft" data-wow-duration="3s">
-                                    <div class="input__calculate">
-                                        <input type="text" name="age" placeholder="Age">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 wow fadeInRight" data-wow-duration="3s">
-                                    <div class="input__calculate">
-                                       <select class="country-select">
-                                          <option value="gender">Gender</option>
-                                          <option value="male">male</option>
-                                          <option value="female">female</option>
-                                       </select>
-                                    </div>
-                                </div>
-                                <div class="calculate__button wow fadeInUp" data-wow-duration="4s">
-                                    <button type="submit" class="cmn--btn">
-                                        calculate now
-                                     </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-6">
-                <div class="calculate__box">
-                    <table>
-                        <tbody><tr class="items__bg wow fadeInUp" data-wow-duration="2s">
-                            <th class="border__one">bmi</th>
-                            <th>weight status</th>
-                        </tr>
-                        <tr class="items__bg__two wow fadeInUp" data-wow-duration="3s">
-                            <td class="border__two">below 18.5</td>
-                            <td>underweight</td>
-
-                        </tr>
-                        <tr class="items__bg wow fadeInUp" data-wow-duration="4s">
-                            <td class="border__two">18.5 - 24.9</td>
-                            <td>normal</td>
-                        </tr>
-                        <tr class="items__bg__two wow fadeInUp" data-wow-duration="5s">
-                            <td class="border__two">25-29.9</td>
-                            <td>overweight</td>
-                        </tr>
-                        <tr class="items__bg__one wow fadeInUp" data-wow-duration="6s">
-                            <td class="border__two">30 and above</td>
-                            <td>obese</td>
-                        </tr>
-                    </tbody></table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--==== Calculate Section End ======= -->
-
 <!--==== Team Section Here ======= -->
 <section class="team__section pt-120 pb-120 section-bg">
     <div class="container">
@@ -606,6 +451,7 @@
             </h2>
         </div>
         <div class="row g-5">
+            {% for traner in traners %}
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s">
                 <div class="team__items">
                     <div class="team__thumb">
@@ -634,7 +480,7 @@
                         <div class="team__content">
                             <h5>
                                <a href="trainner-details.html">
-                                Matt Roberts
+                                   {{ traner.name }}
                                </a>
                             </h5>
                             <p>
@@ -644,82 +490,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="3s">
-                <div class="team__items active">
-                    <div class="team__thumb">
-                        <img src="../../static/assets/img/team/team2.jpg" alt="team__image">
-                        <div class="team__icon">
-                            <ul>
-                                <li>
-                                    <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="mr-none">
-                                    <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                                <li class="mr-none">
-                                    <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="share__icon">
-                            <a href="#">
-                                <i class="fas fa-share-nodes"></i>
-							</a>
-                        </div>
-                        <div class="team__content">
-                            <h5>
-                                <a href="trainner-details.html">
-                                 Louise Parker
-                                </a>
-                             </h5>
-                             <p>
-                                 Crossfit Coach
-                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="4s">
-                <div class="team__items">
-                    <div class="team__thumb">
-                        <img src="../../static/assets/img/team/team3.jpg" alt="team__image">
-                        <div class="team__icon">
-                            <ul>
-                                <li>
-                                    <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="mr-none">
-                                    <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                                <li class="mr-none">
-                                    <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="share__icon">
-                            <a href="#">
-                                <i class="fas fa-share-nodes"></i>
-							</a>
-                        </div>
-                        <div class="team__content">
-                            <h5>
-                                <a href="trainner-details.html">
-                                    Daniel Noah
-                                </a>
-                             </h5>
-                             <p>
-                                 Crossfit Coach
-                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -1249,197 +1020,6 @@
 <!--==== Blog Section End ======= -->
 
 <!--=========== Footer Section Here ========= -->
-<section class="footer__section">
-    <div class="container">
-        <div class="footer__top top__style__two">
-            <div class="row g-5">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s">
-                    <div class="footer__widget">
-                        <div class="widget__head mb__30">
-                            <a href="index.html" class="footer__logo">
-                            <img src="../../static/assets/img/logo/footer-logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <p class="mb__20">
-                            Alteration in some form by injected humour or randomised words which don't look even slightly randomised words believable.
-                        </p>
-                        <ul class="social__icon">
-                            <li class="face">
-                                <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li class="face">
-                                <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="lind">
-                                <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="insta">
-                                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li class="youtube">
-                                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="4s">
-                    <div class="footer__widget">
-                        <div class="widget__head mb__30">
-                            <h4>Latest Posts</h4>
-                            <div class="witr_bar_main">
-                                <div class="witr_bar_inner witr_bar_innerc">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post__items d-flex align-items-center mb__30">
-                            <div class="thumb">
-                                <a href="#0">
-                                    <img src="../../static/assets/img/footer/image/news1.jpg" alt="post__image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h6>
-                                    <a href="#0">
-                                        Your Future is Created by What You Do Today
-                                    </a>
-                                </h6>
-                                <span>20 july 2024</span>
-                            </div>
-                        </div>
-                        <div class="post__items d-flex align-items-center">
-                            <div class="thumb">
-                                <a href="#0">
-                                    <img src="../../static/assets/img/footer/image/news2.jpg" alt="post__image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h6>
-                                    <a href="#0">
-                                        Your Future is Created by What You Do Today
-                                    </a>
-                                </h6>
-                                <span>20 july 2024</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="6s">
-                    <div class="footer__widget">
-                        <div class="widget__head mb__30">
-                            <h4>Our Services</h4>
-                            <div class="witr_bar_main">
-                                <div class="witr_bar_inner witr_bar_innerc">
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="link__list">
-                            <li>
-                                <a href="#0">
-                                    Weight Loss
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    Fat Burn
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    Strength Trainning
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    Self Defense
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    Body Building
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    Psycho Trainning
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="8s">
-                    <div class="footer__widget">
-                        <div class="widget__head mb__30">
-                            <h4>Working Hours</h4>
-                            <div class="witr_bar_main">
-                                <div class="witr_bar_inner witr_bar_innerc">
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li class="mb__30">
-                                Monday – Friday <br>
-                                <span>08:00 – 21:00</span>
-                            </li>
-                            <li class="mb__30">
-                                Saturday <br>
-                                <span>08:00 – 15:00</span>
-                            </li>
-                            <li class="color">
-                                SUNDAY CLOSED
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <p>
-               Copyright ©2024 <a href="#0" class="gym">Salud</a>. Designed By <a href="#0" class="theme">NextGenerationDev</a>
-            </p>
-            <ul class="footer__bottom__link">
-               <li>
-                  <a href="#">
-                     Support
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     Privacy policy
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     Terms of condition
-                  </a>
-               </li>
-            </ul>
-         </div>
-    </div>
-</section>
-<!--=========== Footer Section End ========= -->
+    {% include 'base/footer.html' %}
 
-
-
-
-   <!--Jquery 3 6 0 Min Js-->
-   <script src="../../static/assets/js/jquery-3.7.1.min.js"></script>
-   <!--Bootstrap bundle min Js-->
-   <script src="../../static/assets/js/bootstrap.bundle.min.js"></script>
-   <!--Viewport Jquery Js-->
-   <script src="../../static/assets/js/viewport.jquery.js"></script>
-   <!--Wow min Js-->
-   <script src="../../static/assets/js/wow.min.js"></script>
-   <!--Odometer Up min Js-->
-   <script src="../../static/assets/js/odometer.min.js"></script>
-   <!--Owl Carousel min Js-->
-   <script src="../../static/assets/js/owl.min.js"></script>
-   <!--Popup min Js-->
-   <script src="../../static/assets/js/jquery.magnific-popup.min.js"></script>
-   <!--Owl nice Jquery min Js-->
-   <script src="../../static/assets/js/jquery.nice-select.min.js"></script>
-   <!--Swiper min Js-->
-   <script src="../../static/assets/js/swiper-bundle.min.js"></script>
-   <!--main Js-->
-   <script src="../../static/assets/js/main.js"></script>
-</body>
-</html>
+{% endblock %}

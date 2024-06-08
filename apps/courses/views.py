@@ -8,10 +8,9 @@ from apps.courses.models import Course
 
 
 class CourseListView(View):
-    @login_required
     def get(self, request):
         courses = Course.objects.all()
-        return render(request, 'courses/course_list.html', {'courses': courses})
+        return render(request, 'salud/classes.html', {'courses': courses})
 
 
 class EnrollCourseView(View):

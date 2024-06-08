@@ -1,4 +1,7 @@
+from django.views import generic
 from django.shortcuts import render, redirect
+
+from django.views import View
 
 from apps.reviews.models import Reviews
 
@@ -20,3 +23,17 @@ def update_reviews(request, pk):
         return redirect('homepage')
 
     return render(request, 'update_reviews.html', locals())
+
+#
+# class TestimonialView(View):
+#     def get(self, request):
+#         testimonials = Testimonial.objects.all()
+#         return render(request, 'salud/testimonial.html', {'testimonials': testimonials})
+
+
+
+
+
+class ReviewsListView(generic.ListView):
+    model = Reviews
+    template_name = 'salud/testimonial.html'

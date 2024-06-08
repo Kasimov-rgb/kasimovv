@@ -16,4 +16,4 @@ def add_schedule(request):
             return redirect('schedule_list')
     else:
         form = ScheduleForm()
-    return render(request, 'schedule/add_schedule.html', {'form': form})
+    return render(request, 'salud/schedules.html', {'form': form})

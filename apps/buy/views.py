@@ -14,4 +14,8 @@ def update_card(request):
             return redirect('profile')
     else:
         form = CardForm(instance=user_profile)
-    return render(request, 'update_card.html', {'form': form})
+    return render(request, 'salud/checkout.html', {'form': form})
+
+
+def successful_payment(request):
+    return render(request, 'salud/payment-successful.html')

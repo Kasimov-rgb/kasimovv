@@ -2,24 +2,34 @@ import os
 
 from datetime import timedelta
 
+from dotenv import load_dotenv
+
+
 from pathlib import Path
 
 from django.core.checks import templates
 
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-c8a(0sch603mqk4&=^^pizqvrzt+2+2bi!ob6z$a*imsth97j*'
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG')
+
+
+# SECRET_KEY = 'django-insecure-c8a(0sch603mqk4&=^^pizqvrzt+2+2bi!ob6z$a*imsth97j*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CONFIG_APPS = [
 
     'rest_framework',
-    # 'django_filters'
+    'django_filters',
     'drf_yasg',
     'corsheaders',
     'rest_framework_simplejwt',
@@ -146,7 +156,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = BASE_DIR / 'static
+STATIC_DIR = BASE_DIR / 'static'
+STATICFILES_DIRS = [STATIC_DIR]
+
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'

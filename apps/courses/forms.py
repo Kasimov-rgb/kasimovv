@@ -1,6 +1,6 @@
 from django import forms
 
-# from apps.courses.models import Course
+from apps.courses.models import Course
 
 
 class EnrollmentForm(forms.ModelForm):

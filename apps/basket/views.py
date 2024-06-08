@@ -8,7 +8,7 @@ from apps.basket.forms import AddToFavoriteForm
 
 
 class BasketDetailView(generic.ListView):
-    template_name = 'bsket-detail.html'
+    template_name = 'salud/shop-cart.html'
     context_object_name = 'basket'
 
     def get_queryset(self):
@@ -45,10 +45,15 @@ def add_to_favorite(request, product_id):
             return redirect('product_detail', product_id=product_id)
     else:
         form = AddToFavoriteForm()
-    return render(request, 'add_to_favorite.html', {'form': form})
+    return render(request, 'salud/shop-cart.html', {'form': form})
 
 
 def remove_from_favorite(request, favorite_id):
     favorite = Favorite.objects.get(id=favorite_id)
     favorite.delete()
     return redirect('favorites_list')
+
+
+class BasketListView(generic.ListView):
+    model = Basket
+    template_name = 'salud/shop-cart.html'

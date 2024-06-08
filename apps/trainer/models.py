@@ -27,3 +27,14 @@ class Trainer(models.Model):
     class Meta:
         verbose_name = 'Тренер'
         verbose_name_plural = 'Тренери'
+
+
+class AboutUs(models.Model):
+    title = models.CharField(
+        max_length=100,
+    )
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+

@@ -1,6 +1,8 @@
 from django.urls import path
-from apps.buy.views import update_card
+from apps.buy.views import update_card, successful_payment
 
 urlpatterns = [
-    path('update_card/', update_card, name='update_card'),
+    path('checkout/', update_card, name='checkout'),
+    path('successful_payment/', successful_payment, name='successful'),
+
 ]
